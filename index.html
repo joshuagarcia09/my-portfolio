@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Joshua F. Garcia | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>John Joshua F. Garcia</h1>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="intro">
+      <h2>Hello, I'm <span>John Joshua F. Garcia</span></h2>
+      <p>A passionate UI/UX Designer & Developer</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m John Joshua F. Garcia, a dedicated UI/UX Designer and Developer with a strong passion for creating intuitive and engaging digital experiences. 
+      With a solid foundation in designing and equipped basic skills, I strive to build user-centered interfaces that are both visually appealing and functionally effective.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="experience-item">
+      <h3>UI/UX Design Trainee – Pixel8 Academy (Training Center)</h3>
+      <p><strong>Duration:</strong> July 2024 – September 2024</p>
+      <p>• Gained knowledge in User Interface (UI) and User Experience (UX) principles and skills in design tools like Figma and Adobe XD.</p>
+      <p>• Assisted in creating wireframes, building prototypes, and conducting design audits.</p>
+    </div>
+    <div class="experience-item">
+      <h3>UI/UX Designer (Intern) – Pixel8 Web Solutions & Consultancy Inc.</h3>
+      <p><strong>Duration:</strong> July 2024 – September 2024</p>
+      <p>• Designed user-friendly and seamless Web User Interface.</p>
+      <p>• Learned to research user needs and create detailed wireframes and interactive prototypes.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="portfolio-header">
+      <h2>My Projects</h2>
+    </div>
+    <div class="projects">
+      <div class="project-card" onclick="openModal('modal1')">
+        <h3>Perston Academy</h3>
+        <p>A web application for school grading system</p>
+      </div>
+      <div class="project-card" onclick="openModal('modal2')">
+        <h3>CodeBreaker’s Mansion: Escape Through Encryption</h3>
+        <p>A 3D point-and-click puzzle game about solving basic Computer Science topics.</p>
+      </div>
+      <div class="project-card" onclick="openModal('modal3')">
+        <h3>Alabay</h3>
+        <p>A 2D tile-based farming game about Filipino culture.</p>
+      </div>
+      <div class="project-card" onclick="openModal('modal4')">
+        <h3>To Infinity and Beyond</h3>
+        <p>A 2D computer game with rockets and rocks</p>
+      </div>
+      <div class="project-card" onclick="openModal('modal5')">
+        <h3>Performance Analysis of Generalized and Specified News Category SVM Models for Fake News Detection using Categorized Datasets and Sentiment Analysis</h3>
+        <p>An experimental approach for fake news detection using SVM and different sentiment analysis tool.</p>
+      </div>
+      <div class="project-card" onclick="openModal('modal6')">
+        <h3>Mubi (Movie Streaming App)</h3>
+        <p>A mobile movie streaming application.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-content fullscreen-modal">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h2>Perston Academy</h2>
+      <p><strong>Role:</strong> Frontend Developer</p>
+      <p><strong>Tools:</strong> PHP, CSS, JavaScript</p>
+      <p>A web application for managing school grades efficiently and intuitively.</p>
+      <div class="slideshow-container" data-modal="modal1">
+        <img class="slide active" src="images/Perston Academy.png" alt="Perston Screenshot" />
+      </div>
+      <div class="dots" id="dots-modal1">
+        <span class="dot active" onclick="goToSlide('modal1', 0)"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content fullscreen-modal">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h2>CodeBreaker’s Mansion: Escape Through Encryption</h2>
+      <p><strong>Role:</strong> UI Designer</p>
+      <p><strong>Tools:</strong> Blender, Unity, Canva</p>
+      <p>A 3D point-and-click puzzle game about solving basic Computer Science topics.</p>
+      <div class="slideshow-container" data-modal="modal2">
+        <img class="slide active" src="images/CBM1.jpg" alt="CBM Screenshot 1" />
+        <img class="slide" src="images/CBM2.jpg" alt="CBM Screenshot 2" />
+        <a class="prev" onclick="changeSlide('modal2', -1)">&#10094;</a>
+        <a class="next" onclick="changeSlide('modal2', 1)">&#10095;</a>
+      </div>
+      <div class="dots" id="dots-modal2">
+        <span class="dot active" onclick="goToSlide('modal2', 0)"></span>
+        <span class="dot" onclick="goToSlide('modal2', 1)"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div id="modal3" class="modal">
+    <div class="modal-content fullscreen-modal">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h2>Alabay</h2>
+      <p><strong>Role:</strong> UI Designer & Game Artist</p>
+      <p><strong>Tools:</strong> Aseprite, Canva, Godot</p>
+      <p>A 2D tile-based farming game about Filipino culture.</p>
+      <div class="slideshow-container" data-modal="modal3">
+        <img class="slide active" src="images/ALABAY.png" alt="Alabay Screenshot 1" />
+        <img class="slide" src="images/ALABAY2.png" alt="Alabay Screenshot 2" />
+        <a class="prev" onclick="changeSlide('modal3', -1)">&#10094;</a>
+        <a class="next" onclick="changeSlide('modal3', 1)">&#10095;</a>
+      </div>
+      <div class="dots" id="dots-modal3">
+        <span class="dot active" onclick="goToSlide('modal3', 0)"></span>
+        <span class="dot" onclick="goToSlide('modal3', 1)"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div id="modal4" class="modal">
+    <div class="modal-content fullscreen-modal">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h2>To Infinity and Beyond</h2>
+      <p><strong>Role:</strong> UI/UX Designer & Backend Developer</p>
+      <p><strong>Tools:</strong> Canva, Adobe Animate</p>
+      <p>A 2D computer game with rockets and rocks.</p>
+      <div class="slideshow-container" data-modal="modal4">
+        <img class="slide active" src="images/TIB.png" alt="To Infinity Screenshot 1" />
+        <img class="slide" src="images/TIB (2).png" alt="To Infinity Screenshot 2" />
+        <a class="prev" onclick="changeSlide('modal4', -1)">&#10094;</a>
+        <a class="next" onclick="changeSlide('modal4', 1)">&#10095;</a>
+      </div>
+      <div class="dots" id="dots-modal4">
+        <span class="dot active" onclick="goToSlide('modal4', 0)"></span>
+        <span class="dot" onclick="goToSlide('modal4', 1)"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div id="modal5" class="modal">
+    <div class="modal-content fullscreen-modal">
+      <span class="close" onclick="closeModal('modal5')">&times;</span>
+      <h2>Performance Analysis of Generalized and Specified News Category SVM Models for Fake News Detection using Categorized Datasets and Sentiment Analysis (THESIS)</h2>
+      <p><strong>Role:</strong>Developer</p>
+      <p><strong>Tools:</strong> Python 3.14</p>
+      <p>An experimental approach for fake news detection using SVM and different sentiment analysis tool.</p>
+      <div class="slideshow-container" data-modal="modal5">
+        <img class="slide active" src="images/FND.jpg" alt="FND Screenshot 1" />
+      </div>
+      <div class="dots" id="dots-modal1">
+        <span class="dot active" onclick="goToSlide('modal1', 0)"></span>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+<div id="modal6" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal6')">&times;</span>
+    <h2>Mubi (Move Streaming App)</h2>
+    <p><strong>Role:</strong> UI/UX Designer</p>
+    <p><strong>Tools:</strong> Figma</p>
+    <p>A mobile movie streaming application.</p>
+    <div class="slideshow-container" data-modal="modal6" style="display: flex; justify-content: center;">
+      <img
+        class="slide active"
+        src="images/movie streaming.png"
+        alt="Mobile UI Screenshot"
+        style="width: auto; max-width: 100%; height: 80vh; object-fit: contain; border-radius: 12px;"
+      />
+    </div>
+    <div class="dots" id="dots-modal6">
+      <span class="dot active" onclick="goToSlide('modal6', 0)"></span>
+    </div>
+  </div>
+</div>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:johnjoshuagarcia110@gmail.com">johnjoshuagarcia110@gmail.com</a></p>
+    <p>Number: <a href="#">0992-419-8590</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/john-joshua-garcia-916696200/" target="_blank">John Joshua Garcia</a></p>
+  </section>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      document.querySelectorAll('.modal').forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    };
+
+    function changeSlide(modalId, direction) {
+      const container = document.querySelector(`#${modalId} .slideshow-container`);
+      const slides = container.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(`#dots-${modalId} .dot`);
+      let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains("active"));
+      slides[currentIndex].classList.remove("active");
+      dots[currentIndex].classList.remove("active");
+      let newIndex = (currentIndex + direction + slides.length) % slides.length;
+      slides[newIndex].classList.add("active");
+      dots[newIndex].classList.add("active");
+    }
+
+    function goToSlide(modalId, index) {
+      const container = document.querySelector(`#${modalId} .slideshow-container`);
+      const slides = container.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(`#dots-${modalId} .dot`);
+      slides.forEach(slide => slide.classList.remove("active"));
+      dots.forEach(dot => dot.classList.remove("active"));
+      slides[index].classList.add("active");
+      dots[index].classList.add("active");
+    }
+  </script>
+</body>
+</html>
